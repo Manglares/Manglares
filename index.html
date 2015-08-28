@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="appRoute">
+    <head>
+        <title>Cabaña Manglares - San Antero</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="Deimer De Jesùs Ramos Cuello">
+        <meta name="description" content="Cabaña manglares">
+        <meta name="keywords" content="cabaña manglares, san antero, Hernando Janica">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/photoswipe.css">
+        <link rel="stylesheet" href="css/default-skin/default-skin.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="css/hospedaje.css">
+        <link rel="stylesheet" href="css/instalacion.css">
+        <link rel="stylesheet" href="css/servicios.css">
+    </head>
+    <body>
+        <span class="goTop icon-arrow-up"></span>
+        <header>
+            <div class="navegacion hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                        <ul id="main-menu" class="nav nav-pills hidden-xs">
+                            <li class="active"><a href="#/"><span class="glyphicon glyphicon-home"></span> INICIO </a></li>
+                            <li><a href="#/instalacion"><span class="glyphicon glyphicon-send"></span> INSTALACION</a></li>
+                            <li><a href="#/hospedaje"><span class="glyphicon glyphicon-bed"></span> HOSPEDAJE</a></li>
+                            <li><a href="#/servicios"><span class="glyphicon glyphicon-briefcase"></span> SERVICIOS</a></li>
+                            <li><a href="javascript: void(0)" data-toggle="modal" data-target=".contact"><span class="glyphicon glyphicon-envelope"></span> CONTACTO </a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                     <div class="visible-xs col-xs-12">
+                        <a href="javascript:void(0)" id="mobile-menu-button" class="btn btn-default "><span>Menu</span></a>
+                    </div>
+                    <div id="titulo" class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><h1>CABAÑA MANGLARES</h1></div>
+                    <div id="subtitulo" class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><h2>Hospedese y disfrute de la hermosa playa blanca</h2></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="visible-xs col-xs-12">
+                        <ul id="mobile-main-menu">
+                            <li class="mobile-main-menu-item"><a href="#/"><span class="glyphicon glyphicon-home"></span> INICIO</a></li>
+                            <li class="mobile-main-menu-item"><a href="#/instalacion"><span class="glyphicon glyphicon-send"></span> INSTALACION</a></li>
+                            <li class="mobile-main-menu-item"><a href="#/hospedaje"><span class="glyphicon glyphicon-bed"></span> HOSPEDAJE</a></li>
+                            <li class="mobile-main-menu-item"><a href="#/servicios"><span class="glyphicon glyphicon-briefcase"></span> SERVICIOS</a></li>
+                            <li class="mobile-main-menu-item"><a href="javascript:void(0)" data-toggle="modal" data-target=".contact"><span class="glyphicon glyphicon-envelope"></span> CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rowSlide hidden-xs">
+                        <div>
+                            <section class="slides">
+                                <img src="imgs/slide/P1050629.jpg" alt="primera imagen">
+                                <img src="imgs/slide/P1050672.jpg" alt="segunda imagen">
+                                <img src="imgs/slide/P1050678.jpg" alt="tercera imagen">
+                                <img src="imgs/slide/P1050689.jpg" alt="cuarta imagen">
+                                <img src="imgs/slide/P1050692.jpg" alt="quinta imagen">
+                            </section>
+                        </div>
+                </div>
+        </header>
+        <!-- Zona donde se inserta a traves de angularjs las paginas a index -->
+        <div id="cuerpo" ng-view></div>
+        <!-- Zona donde se inserta a traves de angularjs las paginas a index -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-4 hidden-xs"><h4>CONTACTO</h4>
+                        <img src="imgs/footer/P1050695.jpg" width="100%" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"><h4>UBICACIÒN</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.125518802285!2d-75.7566215!3d9.410384099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMjQnMzcuNCJOIDc1wrA0NScyMy44Ilc!5e0!3m2!1ses!2s!4v1440778992767" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 hidden-xs fanpage"><h4><span class="glyphicon glyphicon-thumbs-up"></span> FAN PAGE</h4>
+                        <div class="fb-like" data-href="https://www.facebook.com/CabanaManglares" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12"><h6>POWERED BY <a href="https://www.twitter.com/dramoscuello">@Dramoscuello</a></h6></div>
+                </div>
+            </div>
+        </footer>
+        <!--
+        ventana modal de contacto
+        -->
+        <div class="modal fade contact" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                  </button>
+                    <h3 class="modal-title" id="myModalLabel"><strong>CONTACTO</strong></h3>
+                </div>
+                <div class="modal-body">
+                    <div>
+                    <h3><span class="glyphicon glyphicon-phone"></span><strong>Telefonos:</strong></h3>
+                    <h4>316 747 0861</h4>
+                    <h4>321 687 9537</h4>
+                    </div>
+                    <div>
+                        <h3><span class="glyphicon glyphicon-inbox"></span><strong> E-Mail:</strong></h3>
+                        <h4>cabana.manglares@gmail.com</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-ok"></span> Ok</button>
+                </div>
+            </div>
+          </div>
+        </div>
+         <!--
+        ventana modal de contacto</>
+        -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/prefixfree.js"></script>
+        <script src="js/jquery.slides.js"></script>
+        <script src="js/funciones.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/photoswipe.min.js"></script>
+        <script src="js/photoswipe-ui-default.min.js"></script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+              fjs.parentNode.insertBefore(js, fjs);
+              }
+              (document, 'script', 'facebook-jssdk'));
+        </script>
+        <script>
+            var routes = angular.module('appRoute',['ngRoute'])
+            routes.config(['$routeProvider', function($routeProvider){
+                $routeProvider.when('/',{
+                    templateUrl: 'templates/inicio.html'
+                }).when('/hospedaje',{
+                    templateUrl: 'templates/hospedaje.html'
+                }).when('/instalacion',{
+                    templateUrl: 'templates/instalacion.html'
+                }).when('/servicios',{
+                    templateUrl: 'templates/servicios.html'
+                })/*.otherwise({
+                    redirectTo:'/',
+                })*/
+            }])
+        </script>
+    </body>
+</html>
